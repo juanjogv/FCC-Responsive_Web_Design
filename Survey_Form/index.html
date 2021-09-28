@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Student license solicitation</h1>
+      <p id="description" class="description text-center">
+        Thanks for choose our software
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Student Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="name@example.com" required />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+        <input type="number" name="age" id="number" min="0" max="30" class="form-control" placeholder="Age" />
+      </div>
+      <div class="form-group">
+        <p>Software Platform</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select the OS</option>
+          <option value="student">Windows</option>
+          <option value="job">Mac OS</option>
+          <option value="learner">Linux</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Would you recommend our software?</p>
+        <label>
+          <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
+        <label>
+          <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+        <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+      </div>
+
+      <div class="form-group">
+        <p>
+          What is your favorite feature of our software?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="Easy to use">Easy to use</option>
+          <option value="Faster">Faster</option>
+          <option value="community">Community</option>
+          <option value="openSource">Open Source</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />
+          I have read and accept the Privacy Policy.
+        </label>
+      </div>
+
+      <div class="form-group">
+        <p>
+          Contact permission
+        </p>
+        <p>
+          We'd love to send you the latest promotions, new products, new features and special limited time
+          offers by email.
+        </p>
+
+        <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Yes
+          please, I'd like to hear about offers and services. You can unsubscribe at
+          anytime.</label>
+        <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />
+          No thanks, I don't want to hear about offers and services.</label>
+      </div>
+
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comment"
+          placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

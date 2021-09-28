@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>HTML</header>
+    <div>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#¿QUÉ_ES_HTML?">¿Qué es HTML?</a></li>
+        <li><a class="nav-link" href="#Anatomia_de_un_elemento_html">Anatomia de un elemento HTML</a></li>
+        <li><a class="nav-link" href="#Anidar_elementos">Anidar elementos</a></li>
+        <li><a class="nav-link" href="#Elementos_vacíos">Elementos vacíos</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <article>
+        <p>
+          HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de
+          la Web. Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan
+          otras tecnologías para describir la apariencia/presentación de una página web (CSS) o la
+          funcionalidad/comportamiento (JavaScript).
+        </p>
+        <p>
+          El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una
+          página web y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o
+          imágenes y tablas de datos. Como lo sugiere el título, este artículo te dará una comprensión básica de HTML y
+          cúal es su función.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="¿QUÉ_ES_HTML?">
+      <header>¿Qué es HTML?</header>
+      <article>
+        <p>HTML no es un lenguaje de programación; es un lenguaje de marcado que define la estructura de tu contenido.
+          HTML consiste en una serie de elementos que usarás para encerrar diferentes partes del contenido para que se
+          vean o comporten de una determinada manera. Las etiquetas de encierre pueden hacer de una palabra o una imagen
+          un hipervínculo a otro sitio, se pueden cambiar palabras a cursiva, agrandar o achicar la letra, etc.
+        </p>
+        <pre>
+          Mi gato es muy gruñon
+        </pre>
+        <p>
+          Si quieres especificar que se trata de un párrafo, podrías encerrar el texto con la etiqueta de párrafo
+          (<code>
+            &lt;p&gt;
+          </code>):
+        </p>
+        <pre>
+          &lt;p&gt;Mi gato es muy gruñon&lt;/p&gt;
+        </pre>
+      </article>
+    </section>
+    <section class="main-section" id="Anatomia_de_un_elemento_html">
+      <header>Anatomia de un elemento HTML</header>
+      <article>
+        <p>Explora este párrafo en mayor profundidad</p>
+        <img
+          src="https://media.prod.mdn.mozit.cloud/attachments/2015/11/10/11913/70fcaca87ee6a6e47028508801bd5ddd/htmlexp.png"
+          alt="">
+        <p>Las partes principales del elemento son:</p>
+        <ol>
+          <li>La etiqueta de apertura</li>
+          <li>La etiqueta de cierre</li>
+          <li>Atirbutos</li>
+          <li>El contenido</li>
+          <li>El elemento</li>
+        </ol>
+      </article>
+    </section>
+    <section class="main-section" id="Anidar_elementos">
+      <header>Anidar elementos</header>
+      <article>
+        <p>
+          Puedes también colocar elementos dentro de otros elementos —esto se llama anidamiento—. Si, por ejemplo,
+          quieres resaltar una palabra del texto (en el ejemplo la palabra «muy»), podemos encerrarla en un elemento
+          <code>&lt;strong&gt;</code>, que significa que dicha palabra se debe enfatizar:
+        </p>
+        <pre>
+          &lt;p&gt;Mi gato es &lt;strong&gt;muy&lt;/strong&gt; gruñon.&lt;/p&gt;
+        </pre>
+        <p>
+          Debes asegurarte que los elementos estén correctamente anidados: en el ejemplo de abajo, creaste la etiqueta
+          de apertura del elemento &lt;p&gt; primero, luego la del elemento &lt;strong&gt;, por lo tanto, debes cerrar
+          esta etiqueta
+          primero, y luego la de &lt;p&gt;. Esto es incorrecto:
+          &lt;/p&gt;
+      </article>
+    </section>
+    <section class="main-section" id="Elementos_vacíos">
+      <header>Elementos vacíos</header>
+      <article>
+        <p>Algunos elementos no poseen contenido, y son llamados elementos vacíos. Toma, por ejemplo, el elemento
+          <code>&lt;img&gt;</code> de nuestro HTML:
+        </p>
+        <pre>
+          <code>&lt;img src="images/firefox-icon.png" alt="Mi imagen de prueba"&gt;</code>
+        </pre>
+        <p>
+          Posee dos atributos, pero no hay etiqueta de cierre <code>&lt;/img&gt;</code> ni contenido encerrado. Esto es
+          porque un
+          elemento
+          de imagen no encierra contenido al cual afectar. Su propósito es desplegar una imagen en la página HTML, en el
+          lugar en que aparece.
+        </p>
+      </article>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
+</html>

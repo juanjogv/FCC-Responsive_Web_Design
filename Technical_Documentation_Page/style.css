@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  position: fixed;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 300px;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <header id="header">
+    <nav id="nav-bar" class="navbar fixed-top">
+      <div class="container-fluid">
+        <a href="#">
+          <img id="header-img"
+            src="https://juanjogv-development-bucket.s3.us-east-2.amazonaws.com/FCC/pizza-navlogo.png" alt="">
+        </a>
+        <div class="item-group">
+          <ul class="nav-list me-auto">
+            <li><a class="nav-link" href="#introwallpaper">Home</a></li>
+            <li><a class="nav-link" href="#pizzaorders">Order Pizza</a></li>
+            <li><a class="nav-link" href="#video-container">About</a></li>
+            <li><a class="nav-link" href="#newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="introwallpaper">
+      <section id="introwallpaper">
+        <h1>
+          <span class="txt-type" data-wait="3000"
+            data-words='["DOMINOS PIZZA", "PIZZA HUT", "LITTLE CAESARS", "TELEPIZZA"]'></span>
+          <span class="blinker">|</span>
+        </h1>
+      </section>
+    </div>
+    <div class="row video-container">
+      <section id="video-container" class="col justify-content-center d-flex">
+        <div class="iframeVideo">
+          <iframe id="video" class="responsive-iframe" width="560" height="315"
+            src="https://www.youtube-nocookie.com/embed/5MfYsHz4VJU?version=3&loop=1&autoplay=1&mute=1&controls=0&playlist=5MfYsHz4VJU"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </section>
+      <section class="videosection col-sm-6 ms-3 d-flex">
+        <div class="video-description justify-content-center d-flex flex-column">
+          <div class="d-flex">
+            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+            <div class="desc">
+              <p><span>Premium Materials</span> <br>Our pizzas are cooked with the best local vegetables,
+                giving them a taste you will never forget.</p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+            <div class="desc">
+              <p><span>Fast Delivery</span> <br>We make sure you receive your pizza in less than 45
+                minutes or it's free of charge.</p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="icon"><i class="fa fa-3x fa-battery-full"></i></div>
+            <div class="desc">
+              <p><span>Quality Assurance</span> <br>For every pizza you buy, we'll make sure it arrives in
+                perfect condition and arrives warm.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div>
+      <section id="pizzaorders" class="row pizzaorders">
+        <div class="col justify-content-center d-flex">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top"
+              src="https://juanjogv-development-bucket.s3.us-east-2.amazonaws.com/FCC/pizza-example.png"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col justify-content-center d-flex">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top"
+              src="https://juanjogv-development-bucket.s3.us-east-2.amazonaws.com/FCC/pizza-example.png"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col justify-content-center d-flex">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top"
+              src="https://juanjogv-development-bucket.s3.us-east-2.amazonaws.com/FCC/pizza-example.png"
+              alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div>
+      <!-- <section id="newsletter">
+            <h2>Suscribe to our newsletter</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input name="email" id="email" type="email" placeholder="Enter your email address" required />
+                <input id="submit" type="submit" value="Get Started" class="btn" />
+            </form>
+        </section>
+    </div>-->
+
+  </main>
+  <footer></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+  <script src="app.js">
+  </script>
+  <script src="https://kit.fontawesome.com/b4d96358fa.js"></script>
+  </script>
+</body>
+
+</html>
